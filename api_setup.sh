@@ -1,7 +1,7 @@
 #!/bin/bash --login
 set -x # Enable debugging
 echo "pulling and Checkout API tag-------------------------------------------"
-git fetch --tags jenkins@10.44.0.72:/var/lib/jenkins/workspace/Q2-2023-EMR-pipeline-3/BHT-EMR-API -f
+git fetch --tags jenkins@10.44.0.51:/var/lib/jenkins/workspace/2024-Q3-EMR-pipeline-newIMG-1/BHT-EMR-API -f
 git checkout v5.0.4 -f
 git describe > HEAD
 echo "____________________________________________"
