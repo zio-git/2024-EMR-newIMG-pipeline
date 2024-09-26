@@ -1,0 +1,21 @@
+#!/bin/bash --login
+set -x # Enable debugging
+echo "pulling and Checkout API tag-------------------------------------------"
+git fetch --tags jenkins@10.44.0.72:/var/lib/jenkins/workspace/Q2-2023-EMR-pipeline-3/BHT-EMR-API -f
+git checkout v5.0.4 -f
+git describe > HEAD
+echo "____________________________________________"
+export PATH=$PATH:/home/emr-user/.rbenv/bin
+export PATH=$PATH:/home/emr-user/.rbenv/shims
+echo "ruby setup"
+source ~/.bashrc
+rbenv local 3.2.0
+echo "____________________________________________"
+echo "Installing Local Gems"
+echo "____________________________________________"
+bundle install --local
+echo "--------------------------------------------"
+echo "running bin_update art"
+echo "____________________________________________"
+./bin/update_art_metadata.sh production
+echo "____________________________________________"
