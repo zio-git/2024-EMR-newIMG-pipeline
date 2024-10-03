@@ -15,7 +15,10 @@ echo "Installing Local Gems"
 echo "____________________________________________"
 bundle install --local
 echo "--------------------------------------------"
+rm -rf /var/www/BHT-EMR-API/db/migrate/20190527130805_create_uuid_remaps.rb
 echo "running bin_update art"
 echo "____________________________________________"
 ./bin/update_art_metadata.sh production
 echo "____________________________________________"
+echo 'Us3r@E_r' | sudo -S systemctl restart emr-api
+echo 'Us3r@E_r' | sudo -S systemctl restart nginx
