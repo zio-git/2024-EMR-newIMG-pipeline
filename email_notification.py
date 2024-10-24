@@ -6,8 +6,8 @@ from email.mime.text import MIMEText
 
 
 # send email notification
-email_recipients = ["zmwakanema@pedaids.org", "oonions@pedaids.org", "willmbowe@gmail.com", "tlwara@pedaids.org", "domstig248@gmail.com", "mnaboti@pedaids.org"]
-subject = "Auto Deployment Status - Pilot Sites"
+email_recipients = ["zmwakanema@pedaids.org", "oonions@pedaids.org", "willmbowe@gmail.com", "tlwara@pedaids.org", "domstig248@gmail.com", "mnaboti@pedaids.org", "lzaina@pedaids.org", "tchitheka@pedaids.org", "bmunyenyembe@pedaids.org", "sam@pihmalawi.com", "egulule@pihmalawi.com"]
+subject = "Auto Deployment Status - Mulanje"
 
 
 smtp_server = "smtp-mail.outlook.com"

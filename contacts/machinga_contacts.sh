@@ -13,7 +13,7 @@ sed -i '32 arecipients = ["+265995246144", "+265998006237", "+265998276712", "+2
 
 # Editing email notification file
 sed -i '9d' email_notification.py
-sed -i '8 aemail_recipients = ["zmwakanema@pedaids.org", "oonions@pedaids.org", "willmbowe@gmail.com", "tlwara@pedaids.org", "domstig248@gmail.com", "mnaboti@pedaids.org", "fnkhata@pedaids.org", "kkanyangala@pedaids.org", "amaneto@pedaids.org", "akabwinja@tingathe.org", "ewetzel@tingathe.org"]' email_notification.py
+sed -i '8 aemail_recipients = ["zmwakanema@pedaids.org", "oonions@pedaids.org", "willmbowe@gmail.com", "tlwara@pedaids.org", "domstig248@gmail.com", "mnaboti@pedaids.org", "fnkhata@pedaids.org", "kkanyangala@pedaids.org", "amaneto@pedaids.org", "akabwinja@tingathe.org", "ewetzel@tingathe.org", "akabwinja@tingathe.org", "mkomakoma@tingathe.org"]' email_notification.py
 
 sed -i '10d' email_notification.py
 sed -i '9 asubject = "Auto Deployment Status - Machinga"' email_notification.py

@@ -1,8 +1,8 @@
 #!/bin/bash --login
 set -x # Enable debugging
 echo "pulling and Checkout API tag-------------------------------------------"
-git fetch --tags jenkins@10.44.0.51:/var/lib/jenkins/workspace/2024-Q3-EMR-pipeline-newIMG-1/BHT-EMR-API -f
-git checkout v5.3.0 -f
+GIT_SSH_COMMAND="ssh -o KexAlgorithms=ecdh-sha2-nistp521" git fetch --tags jenkins@10.44.0.51:/var/lib/jenkins/workspace/2024-Q3-EMR-pipeline-newIMG-1/BHT-EMR-API -f
+git checkout v5.3.1 -f
 git describe > HEAD
 echo "____________________________________________"
 export PATH=$PATH:/home/emr-user/.rbenv/bin
